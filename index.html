@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <title>All-in-One Video Downloader</title>
+    <style>
+        body { font-family: sans-serif; background: #0f172a; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: #1e293b; padding: 30px; border-radius: 20px; width: 90%; max-width: 500px; text-align: center; }
+        input { width: 80%; padding: 15px; border-radius: 10px; border: none; margin-bottom: 10px; }
+        button { background: #6366f1; color: white; padding: 15px 30px; border: none; border-radius: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📥 داگرتنی ڤیدیۆ</h1>
+        <input type="text" id="url" placeholder="لینکەکە لێرە دابنێ...">
+        <br>
+        <button onclick="download()">داگرتنی کوالیتی HD</button>
+    </div>
+    <script>
+        function download() {
+            const url = document.getElementById('url').value;
+            if(url.includes('tiktok') || url.includes('instagram') || url.includes('facebook')) {
+                // لێرەدا سکریپتی APIـی داگرتنەکە دەبەستینەوە
+                alert("بە زوویی لینکی داگرتنەکە ئامادە دەبێت!");
+            } else {
+                alert("تکایە لینکێکی ڕاست دابنێ!");
+            }
+        }
+    </script>
+</body>
+</html>
